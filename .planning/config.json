@@ -1,0 +1,16 @@
+{
+    "workflow": {
+        "mode": "interactive",
+        "depth": "standard"
+    },
+    "project": {
+        "name": "StreamLive",
+        "type": "mobile-backend",
+        "created": "2026-01-09T18:13:25+01:00"
+    },
+    "preferences": {
+        "auto_approve": false,
+        "planning_phases": "5-8",
+        "plans_per_phase": "3-5"
+    }
+}
