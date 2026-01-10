@@ -20,6 +20,7 @@
 - `ios/Project.swift`
 - `ios/Tuist/Package.swift`
 - `ios/.gitignore`
+- `mise.toml`
 - `ios/Sources/StreamLiveApp.swift`
 - `ios/Sources/Views/ContentView.swift`
 - `ios/Sources/Views/HomeView.swift`
