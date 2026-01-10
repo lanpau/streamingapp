@@ -1,0 +1,49 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# iOS / Xcode
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.perspectivev3
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+DerivedData/
+
+# Tuist
+*.xcworkspace
+*.xcodeproj
+.build/
+.swiftpm/
+Tuist/Derived/
+Tuist/Dependencies/
+
+# Agentic
+.planning/codebase/
+.claude/memory/
