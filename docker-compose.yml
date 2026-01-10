@@ -1,0 +1,22 @@
+services:
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - STREAMLIVE_HOST=0.0.0.0
+      - STREAMLIVE_PORT=8000
+      - STREAMLIVE_DEBUG=true
+    volumes:
+      # Mount source code for hot reload functionality (optional, if using dev command)
+      - ./backend/src:/app/src
+    develop:
+      watch:
+        - action: sync
+          path: ./backend/src
+          target: /app/src
+        - action: rebuild
+          path: ./backend/pyproject.toml
+  # Phase 2: Media Server (nginx-rtmp) will be added here
