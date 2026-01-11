@@ -17,7 +17,7 @@ None
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Project scaffolding with backend (FastAPI + uv) and iOS (Tuist)
-- [ ] **Phase 2: Media Server** - Self-hosted RTMP→HLS infrastructure setup
+- [x] **Phase 2: Media Server** - Self-hosted RTMP→HLS infrastructure setup
 - [ ] **Phase 3: Backend API** - FastAPI stream management endpoints
 - [ ] **Phase 4: iOS Streamer** - Camera capture and RTMP publishing
 - [ ] **Phase 5: iOS Viewer** - HLS playback and stream joining
@@ -44,9 +44,9 @@ Plans:
 **Plans**: TBD
 
 Plans:
-- [ ] 02-01: Research and select media server
-- [ ] 02-02: Configure RTMP ingest and HLS output
-- [ ] 02-03: Docker-based local development setup
+- [x] 02-01: Research and select media server (Merged with 02-02)
+- [x] 02-02: Configure RTMP ingest and HLS output (MediaMTX)
+- [x] 02-03: Docker-based local development setup
 
 ### Phase 3: Backend API
 **Goal**: FastAPI endpoints for stream lifecycle management
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Completed | 2026-01-10 |
-| 2. Media Server | 0/3 | Not started | - |
+| 2. Media Server | 3/3 | Completed | 2026-01-11 |
 | 3. Backend API | 0/3 | Not started | - |
 | 4. iOS Streamer | 0/4 | Not started | - |
 | 5. iOS Viewer | 0/3 | Not started | - |
