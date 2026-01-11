@@ -16,7 +16,7 @@ None
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Project scaffolding with backend (FastAPI + uv) and iOS (Tuist)
+- [x] **Phase 1: Foundation** - Project scaffolding with backend (FastAPI + uv) and iOS (Tuist)
 - [ ] **Phase 2: Media Server** - Self-hosted RTMP→HLS infrastructure setup
 - [ ] **Phase 3: Backend API** - FastAPI stream management endpoints
 - [ ] **Phase 4: iOS Streamer** - Camera capture and RTMP publishing
@@ -32,9 +32,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: TBD
 
 Plans:
-- [ ] 01-01: Initialize FastAPI backend with uv
-- [ ] 01-02: Initialize iOS project with Tuist
-- [ ] 01-03: Local development environment setup
+- [x] 01-01: Initialize FastAPI backend with uv
+- [x] 01-02: Initialize iOS project with Tuist
+- [x] 01-03: Local development environment setup
 
 ### Phase 2: Media Server
 **Goal**: Configure self-hosted media server for RTMP ingest and HLS output
@@ -101,7 +101,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Not started | - |
+| 1. Foundation | 3/3 | Completed | 2026-01-10 |
 | 2. Media Server | 0/3 | Not started | - |
 | 3. Backend API | 0/3 | Not started | - |
 | 4. iOS Streamer | 0/4 | Not started | - |
