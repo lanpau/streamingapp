@@ -9,7 +9,7 @@ class StreamBase(BaseModel):
 
 
 class StreamCreate(BaseModel):
-    streamer_device_id: str
+    pass
 
 
 class StreamUpdate(BaseModel):

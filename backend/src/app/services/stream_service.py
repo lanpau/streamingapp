@@ -49,12 +49,15 @@ async def create_stream(db: AsyncSession, device_id: str) -> Stream:
     return new_stream
 
 
-async def stop_stream(db: AsyncSession, stream_id: str) -> Stream:
+async def stop_stream(db: AsyncSession, stream_id: str, device_id: str) -> Stream:
     result = await db.execute(select(Stream).where(Stream.id == stream_id))
     stream = result.scalar_one_or_none()
     
     if not stream:
         raise ValueError("Stream not found")
+    
+    if stream.streamer_device_id != device_id:
+        raise PermissionError("Forbidden: You do not own this stream")
     
     stream.status = "ended"
     stream.ended_at = datetime.now(timezone.utc)

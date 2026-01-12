@@ -31,7 +31,7 @@ async def test_stop_stream(db_session: AsyncSession):
     device_id = "test-device-3"
     stream = await create_stream(db_session, device_id)
     
-    stopped_stream = await stop_stream(db_session, stream.id)
+    stopped_stream = await stop_stream(db_session, stream.id, device_id)
     
     assert stopped_stream.status == "ended"
     assert stopped_stream.ended_at is not None
