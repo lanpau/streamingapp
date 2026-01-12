@@ -56,7 +56,7 @@ Plans:
 
 Plans:
 - [x] 03-01: Database models and stream management
-- [ ] 03-02: Stream API endpoints (create, get, list)
+- [x] 03-02: Stream API endpoints (create, get, list)
 - [ ] 03-03: Device ID authentication
 
 ### Phase 4: iOS Streamer
@@ -103,7 +103,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Completed | 2026-01-10 |
 | 2. Media Server | 3/3 | Completed | 2026-01-11 |
-| 3. Backend API | 1/3 | In progress | 2026-01-11 |
+| 3. Backend API | 2/3 | In progress | - |
 | 4. iOS Streamer | 0/4 | Not started | - |
 | 5. iOS Viewer | 0/3 | Not started | - |
 | 6. Integration | 0/3 | Not started | - |
