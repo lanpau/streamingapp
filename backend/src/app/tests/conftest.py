@@ -34,6 +34,8 @@ async def db_session() -> AsyncSession:
     await engine.dispose()
 
 
+from httpx import AsyncClient, ASGITransport
+
 @pytest.fixture
 async def async_client(db_session: AsyncSession) -> AsyncClient:
     async def override_get_db() -> AsyncSession:
@@ -41,7 +43,9 @@ async def async_client(db_session: AsyncSession) -> AsyncClient:
 
     app.dependency_overrides[get_db] = override_get_db
 
-    async with AsyncClient(app=app, base_url="http://test") as client:
+    async with AsyncClient(
+        transport=ASGITransport(app=app), base_url="http://test"
+    ) as client:
         yield client
 
     app.dependency_overrides.clear()

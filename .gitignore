@@ -47,3 +47,6 @@ Tuist/Dependencies/
 # Agentic
 .planning/codebase/
 .claude/memory/
+
+# Database
+*.db

@@ -19,6 +19,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+from app.api.v1.streams import router as streams_router
+
+app.include_router(streams_router, prefix="/api/v1")
 
 @app.get("/")
 def read_root():
