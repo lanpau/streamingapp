@@ -1,6 +1,14 @@
 # StreamLive
 
+## Meta
+
+The project's main goal is to explore the [Get Shit Done](https://github.com/glittercowboy/get-shit-done) spec-driven workflow for agentic coding.
+
+Almost everything in this repo is written by an AI.
+
+## Description 
 **Invite-only mobile live streaming with RTMP ingest and HLS playback.**
+
 
 One user launches a video stream from their iPhone, others join via a stream code to watch.
 
