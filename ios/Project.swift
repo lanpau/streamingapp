@@ -3,6 +3,9 @@ import ProjectDescription
 let project = Project(
     name: "StreamLive",
     organizationName: "StreamLive",
+    packages: [
+        .package(url: "https://github.com/shogo4405/HaishinKit.swift", .upToNextMajor(from: "1.9.0")),
+    ],
     targets: [
         .target(
             name: "StreamLive",
@@ -20,7 +23,9 @@ let project = Project(
             ),
             sources: ["Sources/**"],
             resources: ["Resources/**"],
-            dependencies: []
+            dependencies: [
+                .package(product: "HaishinKit"),
+            ]
         )
     ]
 )
